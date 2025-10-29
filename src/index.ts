@@ -32,7 +32,6 @@ const good = app.get('/good', (c) => {
 })
 
 export type AppType = typeof hoge & typeof fuga & typeof piyo & typeof hello & typeof hi & typeof bye & typeof good
-export const a = new Hono() as AppType
 
 serve({
   fetch: app.fetch,
