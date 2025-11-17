@@ -9,7 +9,7 @@ on:
 jobs:
   build:
     name: Build and Test
-    runs-on: ubuntu-slim
+    runs-on: hogehoge
 
     strategy:
       matrix:
