@@ -1,0 +1,100 @@
+title: "ADR XXX: "
+labels: ["adr"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        ## ADR (Architecture Decision Record) テンプレート
+
+        アーキテクチャ上の重要な決定を記録するためのテンプレートです。
+        各セクションに適切な情報を記入してください。
+
+  - type: dropdown
+    id: status
+    attributes:
+      label: "ステータス"
+      description: "現在のADRのステータスを選択してください"
+      options:
+        - Draft
+        - Proposed
+        - Accepted
+        - Rejected
+        - Superseded
+      default: 0
+    validations:
+      required: true
+
+  - type: textarea
+    id: context
+    attributes:
+      label: "コンテキスト"
+      description: "何を決定する必要があるか、なぜその決定が必要になったかを記述します"
+      placeholder: |
+        - 解決したい問題や課題
+        - ビジネス上の要件や制約
+        - 技術的な背景
+    validations:
+      required: false
+
+  - type: textarea
+    id: options
+    attributes:
+      label: "検討した選択肢"
+      description: "どのような選択肢を検討したかを列挙します"
+      placeholder: |
+        ### 選択肢1: {名前}
+
+        - 概要
+        - メリット
+        - デメリット
+
+        ### 選択肢2: {名前}
+
+        - 概要
+        - メリット
+        - デメリット
+    validations:
+      required: false
+
+  - type: textarea
+    id: decision
+    attributes:
+      label: "決定"
+      description: "何を選択したか、なぜその選択をしたかを明確に記述します"
+      placeholder: "選択した内容とその理由を記述してください"
+    validations:
+      required: false
+
+  - type: textarea
+    id: consequences
+    attributes:
+      label: "結果"
+      description: "この決定による影響を記述します"
+      placeholder: |
+        ### ポジティブな影響
+
+        - 影響1
+        - 影響2
+
+        ### ネガティブな影響・トレードオフ
+
+        - 影響1
+        - 影響2
+
+        ### リスクと対応策
+
+        - リスク1: 対応策
+        - リスク2: 対応策
+    validations:
+      required: false
+
+  - type: textarea
+    id: references
+    attributes:
+      label: "参考資料"
+      description: "関連するドキュメントやリンク"
+      placeholder: |
+        - 関連するドキュメントやリンク
+        - 議論の記録（GitHub Issue、PRなど）
+    validations:
+      required: false
