@@ -51,7 +51,7 @@ ADRは以下のルールに従って管理します：
 - ADRの管理と更新に継続的な努力が必要
 - 何をADRとして記録すべきかの判断が必要
 
-### 参考
+## 参考
 
 - [Architecture Decision Records (ADR)](https://adr.github.io/)
 - [Documenting Architecture Decisions by Michael Nygard](https://cognitect.com/blog/2011/11/15/documenting-architecture-decisions)
